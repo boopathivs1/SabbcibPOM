@@ -27,6 +27,16 @@ public class EstatPage extends ProjectWrapp{
 		//Thread.sleep(3000);
 		clickByXpathExplict(".//li[contains(@class,'active-result')][contains(text(),'"+statAccno+"')]");	
 
+		Boolean d=VerifyElementpresentreturn(prop.getProperty("statement.pages.balance.xpath"));
+		if(d){
+			
+			reportStep("Estatement Balance has been dispalying","PASS");
+		}
+		
+		else{
+			reportStep("Estatement Balance has not been dispalying","FAIL");			
+		}
+		
 //		clickByXpathExplict(".//li[contains(@class,'active-result')][contains(text(),'"+statAccno+"')]");	
 	
 		dropdownSelection(prop.getProperty("click.estatmonthselection.xpath"), month);

@@ -15,9 +15,9 @@ public class OtP_Page extends ProjectWrapp{
 
 	public SabbDashboard submitTokenXpath(String token) throws InterruptedException{
 	//	Thread.sleep(1000);
-		enterByXpathExplict(prop.getProperty("Enter.token.xpath"),token);
+		//enterByXpathExplict(prop.getProperty("Enter.token.xpath"),token);
 	//	Thread.sleep(1000);
-		clickByXpathExplict(prop.getProperty("click.submitButton.xpath"));
+		//clickByXpathExplict(prop.getProperty("click.submitButton.xpath"));
 		log.info("Otp has been submitted");
 
 		

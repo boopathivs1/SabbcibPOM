@@ -21,7 +21,9 @@ public class TC_106_EStatement  extends ProjectWrapp {
 		dataSheetName="SaabCIBDev";
 		category="Regression";
 		authors="Boopathi";
-		testKeyword="TC106";
+		testKeyword="TC106a";
+		
+	//	testKeyword="TC106";
 		LogoutStatus=true;
 		usertype="CIBUser";
 
@@ -34,7 +36,7 @@ public class TC_106_EStatement  extends ProjectWrapp {
 		try{
 		new	SaabHomePage(driver,test)
 		.enterGroupID(GroupID)
-		.enterUsernameID("sridhar01")
+		.enterUsernameID(Username)
 		.clickLoginButton()
 		.enterPassword(Password)
 		.clickSecureimage()
