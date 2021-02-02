@@ -264,6 +264,8 @@ public Userspage clickDeleteAssignAccessRights(){
 public Userspage fillAccessRights() throws InterruptedException{
 	//verifyTextByXpathExplicitwait(prop.getProperty("corporate.assign.status.xpath"),"Un-Assigned");
 	clickByXpathExplict(prop.getProperty("click.edit.assignaccess.xpath"));
+	
+	
 	clickByXpathExplict(prop.getProperty("click.selectall.assignaccess.xpath"));
 	clickByXpathExplict(prop.getProperty("click.submit.button.assignaccess.xpath"));
 

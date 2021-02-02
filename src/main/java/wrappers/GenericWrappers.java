@@ -900,7 +900,7 @@ return B;
 				else{ // this is for local run
 				if(browser.equalsIgnoreCase("chrome")){
 					//System.setProperty("webdriver.chrome.driver", "./drivers/chromedrivers.exe");
-					System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver76.exe");
+					System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver85.exe");
 					driver = new ChromeDriver();
 			
 				}else{
