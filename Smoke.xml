@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Testsss" thread-count="1" parallel="classes">
+ 
+<classes>
+  
+  
+       <class name="testcases.TC_01_Account_Summary"/>
+      <class name="testcases.TC_02_Account_Statement"/>
+ 
+
+ <class name="testcases.TC_03_Account_Details"/>
+<class name="testcases.TC_04_Account_Mini_Statement"/>
+
+      <class name="testcases.TC_10_Account_Statement_Email"/>
+
+
+ 
+     <class name="testcases.TC_14_New_Deposit_Request"/>
+      <class name="testcases.TC_18_Update_maturity"/>
+      <class name="testcases.TC_22_Interim_Statement"/>
+      <class name="testcases.TC_23_Previous_Month_Statement"/>
+      <class name="testcases.TC_24_Own_account_Pay_Now"/>
+      <class name="testcases.TC_32_Local_Transfer"/>
+
+      <class name="testcases.TC_30_Local_Transfer"/>
+
+      <class name="testcases.TC_36_Other_SABB_Accounts"/>
+      <class name="testcases.TC_42_Overseas_Transfer"/>
+
+<class name="testcases.TC_68_onetimePayment"/>
+
+      <class name="testcases.TC_73_MOI_Payment"/>
+
+      <class name="testcases.TC_39_Local_Transfer"/>
+  
+  
+  
+  
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

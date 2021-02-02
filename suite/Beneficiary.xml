@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Testaa" thread-count="1" parallel="false">
+  
+    <classes>
+      <class name="testcases.TC_30"/>
+      <class name="testcases.TC_31"/>
+      <class name="testcases.TC_32"/>
+       <class name="testcases.TC_33"/>
+      <class name="testcases.TC_34"/>
+      <class name="testcases.TC_35"/>
+    
+     
+      <class name="testcases.TC_27"/> 
+      <class name="testcases.TC_28"/>
+      <class name="testcases.TC_29"/>
+     
+      
+      
+         
+ 
+      
+         </classes>
+         
+         </test>
+
+</suite> <!-- Suite -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test" thread-count="1" parallel="false">
+    <classes>
+
+      <class name="testcases.TC_45_OWN_Account_SI"/>
+
+
+      <class name="testcases.TC_46_OWN_Account_SI"/>
+
+      <class name="testcases.TC_47_OWN_Account_SI"/>
+
+      <class name="testcases.TC_48_OWN_Account_SI"/>
+
+
+
+
+
+      <class name="testcases.TC_49_Local_Transfer_SI"/>
+      <class name="testcases.TC_50_Local_Transfer_SI"/>
+
+
+      <class name="testcases.TC_51_Local_Transfer_SI"/>
+      <class name="testcases.TC_52_Local_Transfer_SI"/>
+
+      <class name="testcases.TC_53_Other_SABB_Account_SI"/>
+
+
+      <class name="testcases.TC_54_Other_SABB_Accounts_SI"/>
+
+      <class name="testcases.TC_55_Other_SABB_Accounts_SI"/>
+
+      <class name="testcases.TC_56_Other_SABB_Accounts_SI"/>
+      <class name="testcases.TC_57_Overseas_Transfer_SI"/>
+
+      <class name="testcases.TC_58_Overseas_Transfer_SI"/>
+      <class name="testcases.TC_59_Overseas_Transfer_SI"/>
+      <class name="testcases.TC_60_Overseas_Transfers_SI"/>
+  <class name="testcases.TC_61_WPS_Upload"/>
+      <class name="testcases.TC_62_WPS_Upload"/>
+
+      <class name="testcases.TC_63_Transfer_History"/>
+     <class name="testcases.TC_64_Payment_Reports"/>
+
+
+      <class name="testcases.TC_68_onetimePayment"/>
+
+
+      <class name="testcases.TC_69_SADAD_Bill_Inquiry"/>
+                    <class name="testcases.TC_70_SADAD_Bill_Payment"/>
+  <class name="testcases.TC_71_SADAD_Payment_History"/>
+                        <class name="testcases.TC_72_SADAD_Payment_Reports"/>
+      <class name="testcases.TC_73_MOI_Payment"/>
+      <class name="testcases.TC_74_MOI_Refund"/>
+      <class name="testcases.TC_75_MOI_Payment_Reports"/>   
+          
+          </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

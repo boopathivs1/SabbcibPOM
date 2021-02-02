@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Testsss" thread-count="1" parallel="classes">
+ 
+<classes>
+  
+  
+  <class name="testcases.TC_01_Account_Summary"/> 
+      <class name="testcases.TC_02_Account_Statement"/>
+      <class name="testcases.TC_03_Account_Details"/>
+
+      <class name="testcases.TC_04_Account_Mini_Statement"/>
+      <class name="testcases.TC_05_Account_CurrentMonthStatement"/>
+
+      <class name="testcases.TC_06_Previous_Month_Statement"/>
+
+      <class name="testcases.TC_07_Last_Three_Month_Statement"/>
+      <class name="testcases.TC_08_Account_Statement_More_Filter"/>
+
+      <class name="testcases.TC_09_Account_Statement_Download"/>
+      <class name="testcases.TC_10_Account_Statement_Email"/>
+
+      <class name="testcases.TC_11_Edit_nick_name"/>
+
+      <class name="testcases.TC_12_Update_tags"/>
+      <class name="testcases.TC_13_Request_Status"/>
+
+ <class name="testcases.TC_14_New_Deposit_Request"/>
+
+      <class name="testcases.TC_18_Update_maturity"/>
+
+
+      <class name="testcases.TC_22_Interim_Statement"/>
+
+      <class name="testcases.TC_23_Previous_Month_Statement"/>
+
+      <class name="testcases.TC_24_Own_account_Pay_Now"/>
+      <class name="testcases.TC_25_Own_account_Pay_Later"/>
+
+  <class name="testcases.TC_26_Own_account_Repeat"/>
+     
+    
+  
+  
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

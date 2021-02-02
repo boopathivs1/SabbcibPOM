@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test" thread-count="1" parallel="false">
+    <classes>
+             <class name="testcases.TC_14_New_Deposit_Request"/>
+      <class name="testcases.TC_09_Account_Statement_Download"/>
+      <class name="testcases.TC_102_Matrix_Creation"/>
+      <class name="testcases.TC_59_Overseas_Transfer_SI"/>
+      <class name="testcases.TC_38_Other_SABB_Accounts"/>
+      <class name="testcases.TC_18_Update_maturity"/>
+      <class name="testcases.TC_60_Overseas_Transfers_SI"/>
+      <class name="testcases.TC_12_Update_tags"/>
+      <class name="testcases.TC_27_Other_SABB_Accounts"/>
+      <class name="testcases.TC_01_Account_Summary"/>
+      <class name="testcases.TC_08_Account_Statement_More_Filter"/>
+      <class name="testcases.TC_54_Other_SABB_Accounts_SI"/>
+      <class name="testcases.TC_30_Local_Transfer"/>
+      <class name="testcases.TC_79_Assign_Corporates"/>
+      <class name="testcases.TC_28_Other_SABB_Accounts"/>
+      <class name="testcases.TC_89_Delete_Users"/>
+      <class name="testcases.TC_66_SADAD_Edit_Biller"/>
+      <class name="testcases.TC_04_Account_Mini_Statement"/>
+      <class name="testcases.TC_15_New_Deposit_Request"/>
+      <class name="testcases.TC_53_Other_SABB_Account_SI"/>
+      <class name="testcases.TC_58_Overseas_Transfer_SI"/>
+      <class name="testcases.TC_35_Overseas_Transfer"/>
+      <class name="testcases.TC_16_New_Deposit_Request"/>
+      <class name="testcases.TC_65_SADAD_ADD_Biller"/>
+      <class name="testcases.TC_02_Account_Statement"/>
+      <class name="testcases.TC_94_Matrix_Creation"/>
+      <class name="testcases.TC_34_Overseas_Transfer"/>
+      <class name="testcases.TC_55_Other_SABB_Accounts_SI"/>
+      <class name="testcases.TC_29_Other_SABB_Accounts"/>
+      <class name="testcases.TC_80_Assign_Modify_Access_Rights"/>
+      <class name="testcases.TC_106_EStatement"/>
+      <class name="testcases.TC_03_Account_Details"/>
+      <class name="testcases.TC_93_Matrix_Deletion"/>
+      <class name="testcases.TC_100_Matrix_Modification"/>
+      <class name="testcases.TC_88_Activate_User"/>
+      <class name="testcases.TC_107_Alfairs"/>
+      <class name="testcases.TC_33_Overseas_Transfer"/>
+      <class name="testcases.TC_101_Matrix_Deletion"/>
+      <class name="testcases.TC_48_OWN_Account_SI"/>
+      <class name="testcases.TC_78_update_expiry_date"/>
+      <class name="testcases.TC_56_Other_SABB_Accounts_SI"/>
+
+
+      <class name="testcases.TC_37_Other_SABB_Acc"/>
+      <class name="testcases.TC_92_Matrix_Creation"/>
+      <class name="testcases.TC_85_lock_Unlock_User"/>
+      <class name="testcases.TC_95_Matrix_Creation"/>
+      <class name="testcases.TC_51_Local_Transfer_SI"/>
+      <class name="testcases.TC_31_Local_Transfer"/>
+
+
+
+
+      <class name="testcases.TC_87_Deactivate_User"/>
+      <class name="testcases.TC_76_Create_New_Users"/>
+
+      <class name="testcases.TC_98_Matrix_Creation"/>
+      <class name="testcases.TC_05_Account_CurrentMonthStatement"/>
+
+
+      <class name="testcases.TC_46_OWN_Account_SI"/>
+      <class name="testcases.TC_77_Edit_Users"/>
+      <class name="testcases.TC_103_Matrix_Modification"/>
+      <class name="testcases.TC_43_Overseas_Transfer"/>
+      <class name="testcases.TC_52_Local_Transfer_SI"/>
+
+      <class name="testcases.TC_19_Update_Maturity_Instruction"/>
+      <class name="testcases.TC_70_SADAD_Bill_Payment"/>
+      <class name="testcases.TC_49_Local_Transfer_SI"/>
+
+      <class name="testcases.TC_96_Matrix_Modification"/>
+      <class name="testcases.TC_26_Own_account_Repeat"/>
+
+
+      <class name="testcases.TC_44_Overseas_Transfer"/>
+      <class name="testcases.TC_24_Own_account_Pay_Now"/>
+      <class name="testcases.TC_20_Update_Maturity_Instruction"/>
+      <class name="testcases.TC_41_Local_Transfer"/>
+      <class name="testcases.TC_11_Edit_nick_name"/>
+      <class name="testcases.TC_22_Interim_Statement"/>
+      <class name="testcases.TC_10_Account_Statement_Email"/>
+      <class name="testcases.TC_23_Previous_Month_Statement"/>
+      <class name="testcases.TC_39_Local_Transfer"/>
+      <class name="testcases.TC_21_Update_Maturity_Instruction"/>
+      <class name="testcases.TC_06_Previous_Month_Statement"/>
+      <class name="testcases.TC_104_Admin_Module_No_Check"/>
+      <class name="testcases.TC_45_OWN_Account_SI"/>
+      <class name="testcases.TC_25_Own_account_Pay_Later"/>
+      <class name="testcases.TC_07_Last_Three_Month_Statement"/>
+      <class name="testcases.TC_67_SADAD_Delete_Biller"/>
+      <class name="testcases.TC_97_Matrix_Deletion"/>
+      <class name="testcases.TC_84_DeAssign_Corporates"/>
+      <class name="testcases.TC_36_Other_SABB_Accounts"/>
+      <class name="testcases.TC40_Local_Transfer_Pay_Later"/>
+      <class name="testcases.TC_99_Matrix_Creation"/>
+      <class name="testcases.TC_17_New_Deposit_Request"/>
+
+      <class name="testcases.TC_13_Request_Status"/>
+      <class name="testcases.TC_47_OWN_Account_SI"/>
+      <class name="testcases.TC_42_Overseas_Transfer"/>
+      <class name="testcases.TC_57_Overseas_Transfer_SI"/>
+      <class name="testcases.TC_83_Delete_Deassign_Access_Rights"/>
+      <class name="testcases.TC_105_Matrix_Deletion_No_Check"/>
+      <class name="testcases.TC_50_Local_Transfer_SI"/>
+      <class name="testcases.TC_32_Local_Transfer"/>
+
+
+
+
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
