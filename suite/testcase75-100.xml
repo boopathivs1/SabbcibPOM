@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testcases.TC_76"/>
+      <class name="testcases.TC_77"/>
+      <class name="testcases.TC_78"/>
+      <class name="testcases.TC_79"/>
+     <class name="testcases.TC_80"/>
+     <class name="testcases.TC_83"/>
+     <class name="testcases.TC_84"/>
+      <class name="testcases.TC_87"/>
+      <class name="testcases.TC_88"/>
+     <class name="testcases.TC_89"/>
+  
+  
+          <class name="testcases.TC_92"/>
+      <class name="testcases.TC_93"/>
+      <class name="testcases.TC_94"/>
+      <class name="testcases.TC_102"/>
+      <class name="testcases.TC_95"/>
+      <class name="testcases.TC_96"/>
+      <class name="testcases.TC_97"/>
+      
+
+      <class name="testcases.TC_98"/>
+      <class name="testcases.TC_103"/>
+      <class name="testcases.TC_99"/>
+      <class name="testcases.TC_100"/>
+            <class name="testcases.TC_101"/>
+      
+
+     
+  
+      
+
+
+            
+            
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
