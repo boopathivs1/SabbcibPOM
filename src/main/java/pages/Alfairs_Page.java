@@ -61,6 +61,46 @@ clickByXpathExplict(prop.getProperty("click.tooltip.dashboard.xpath"));
 	
 	
 	
+public Alfairs_Page check_NavigationAlfairs(String accno) throws InterruptedException{
+	//Thread.sleep(20000);
+
+	locateFrame("icanvas");
+	
+	dropdownSelection(prop.getProperty("select.corpaddbill.xpath"),accno);
+	clickByXpathExplict(prop.getProperty("submit.estat.xpath"));
+
+	
+	//clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
+	
+	//clickByXpathExplict(prop.getProperty("submit.estat.checkbox.xpath"));
+	
+	
+	clickByXpathExplict(prop.getProperty("submit.estat.ok.xpath"));
+//	clickJsWaitLess(prop.getProperty("submit.estat.ok.xpath"));
+windowhandlesindex(1);	
+
+	
+
+Boolean a=VerifyElementpresentreturn(prop.getProperty("verify.table.data.alfair.xpath"));
+	
+	if(a){
+		reportStep("Biller Details has not been displaying","FAIL");
+	}
+	else{
+			reportStep("Biller Details has been displaying","PASS");
+	}
+	
+	
+	
+windowclose();
+windowhandlesindex(0);
+
+clickByXpathExplict(prop.getProperty("click.tooltip.dashboard.xpath"));
+	
+	return this;
+	
+}
+	
 	
 	
 	
