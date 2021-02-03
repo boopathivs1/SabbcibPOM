@@ -25,8 +25,12 @@ public Alfairs_Page fillAlfairs(String accno) throws InterruptedException{
 	dropdownSelection(prop.getProperty("select.corpaddbill.xpath"),accno);
 	clickByXpathExplict(prop.getProperty("submit.estat.xpath"));
 
+
 	clickByXpathExplict(prop.getProperty("click.continue.xpath"));
 	//clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
+
+	
+//	clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
 	
 	//clickByXpathExplict(prop.getProperty("submit.estat.checkbox.xpath"));
 	
