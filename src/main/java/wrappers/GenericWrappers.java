@@ -900,7 +900,11 @@ return B;
 				else{ // this is for local run
 				if(browser.equalsIgnoreCase("chrome")){
 					//System.setProperty("webdriver.chrome.driver", "./drivers/chromedrivers.exe");
+
 					System.setProperty("webdriver.chrome.driver", "./drivers/chromedrivers.exe");
+
+					//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver85.exe");
+
 					driver = new ChromeDriver();
 			
 				}else{
@@ -4660,22 +4664,22 @@ catch (Exception e) {
 
 
 
-public WebElement fluentwaitsClick(By locator)
-{
-  Wait wait = new FluentWait(driver)
-      .withTimeout(60, TimeUnit.MILLISECONDS)
-      .pollingEvery(4, TimeUnit.MILLISECONDS)
-      .ignoring(NoSuchElementException.class);
-  WebElement element = (WebElement) wait.until(new Function<WebDriver, WebElement>() 
-  {
-
-    public WebElement apply(WebDriver driver)
-    {
-      return driver.findElement(locator);
-    }
-  });
-  return element;
-}
+//public WebElement fluentwaitsClick(By locator)
+//{
+//  Wait wait = new FluentWait(driver)
+//      .withTimeout(60, TimeUnit.MILLISECONDS)
+//      .pollingEvery(4, TimeUnit.MILLISECONDS)
+//      .ignoring(NoSuchElementException.class);
+//  WebElement element = (WebElement) wait.until(new Function<WebDriver, WebElement>() 
+//  {
+//
+//    public WebElement apply(WebDriver driver)
+//    {
+//      return driver.findElement(locator);
+//    }
+//  });
+//  return element;
+//}
 
 
 }

@@ -264,6 +264,8 @@ public Userspage clickDeleteAssignAccessRights(){
 public Userspage fillAccessRights() throws InterruptedException{
 	//verifyTextByXpathExplicitwait(prop.getProperty("corporate.assign.status.xpath"),"Un-Assigned");
 	clickByXpathExplict(prop.getProperty("click.edit.assignaccess.xpath"));
+	
+	
 	clickByXpathExplict(prop.getProperty("click.selectall.assignaccess.xpath"));
 	clickByXpathExplict(prop.getProperty("click.submit.button.assignaccess.xpath"));
 
@@ -272,6 +274,20 @@ public Userspage fillAccessRights() throws InterruptedException{
 }
 
 
+public Userspage fillAccessRights(String checkboxstatus) throws InterruptedException{
+	//verifyTextByXpathExplicitwait(prop.getProperty("corporate.assign.status.xpath"),"Un-Assigned");
+	clickByXpathExplict(prop.getProperty("click.edit.assignaccess.xpath"));
+	
+	if(checkboxstatus.equalsIgnoreCase("Yes"))
+	{
+		clickByXpathExplict(prop.getProperty("select.enable.secondary.checkbox.xpath"));		
+	}
+	clickByXpathExplict(prop.getProperty("click.selectall.assignaccess.xpath"));
+	clickByXpathExplict(prop.getProperty("click.submit.button.assignaccess.xpath"));
+
+	Thread.sleep(15000);
+	return this;
+}
 
 public Userspage verifyCorporateAssigned(){
 VerifyElementPresent(prop.getProperty("verify.corporate.assign.xpath"),"Corporate has been assigned to this User","Corporate has not been assigned to this User");	

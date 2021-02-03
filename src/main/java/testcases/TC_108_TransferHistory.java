@@ -11,17 +11,17 @@ import com.relevantcodes.extentreports.ExtentTest;
 import pages.SaabHomePage;
 import wrappers.ProjectWrapp;
 
-public class TC_63_Transfer_History  extends ProjectWrapp {
+public class TC_108_TransferHistory extends ProjectWrapp {
 	@BeforeClass(groups={"common"})
 	public void setDatag() {
-		testCaseName="TC63 Transfer History";
+		testCaseName="TC108 Transfer History";
 
 		testDescription="Transfer History";
 		browserName="Chrome";
 		dataSheetName="SaabCIBDev";
 		category="Sanity";
 		authors="Boopathi";
-		testKeyword="TC63a";
+		testKeyword="TC108";
 		LogoutStatus=true;
 		usertype="CIBUser";
 
@@ -29,7 +29,7 @@ public class TC_63_Transfer_History  extends ProjectWrapp {
 
 	@Test(groups={"sanity"},dataProvider="fetch")
 
-	public void TransferHistory(String casename,String GroupID ,String Username,String Password,String Otp,String corpid,String fromacc,String Fromdate,String from,String ToBeneficiary,String currency,String amount,String Purpose,String foryouracc,String auth1,String auth2,String frequency,String timesofday,String data3,String data4,String data5) throws Exception{
+	public void TransferHistory(String casename,String GroupID ,String Username,String Password,String Otp,String corpid,String fromacc,String fromdate,String from,String ToBeneficiary,String currency,String amount,String Purpose,String foryouracc,String auth1,String auth2,String frequency,String timesofday,String data3,String data4,String data5) throws Exception{
 		
 		try{
 		new	SaabHomePage(driver,test)
@@ -42,7 +42,7 @@ public class TC_63_Transfer_History  extends ProjectWrapp {
 		.submitTokenXpath(Otp)
 		.clickpaymentMenuTransferPage()
 		.transferHistoryMenu()
-		.transferHistorycheck(corpid,fromacc,Fromdate)
+		.transfer_History_verify(corpid, fromacc, fromdate)
 		.logout(LogoutStatus,usertype);
 		
 		loginfoSuccess(testCaseName,testDescription);
