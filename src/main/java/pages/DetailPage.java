@@ -46,9 +46,19 @@ return this;
 		
 		
 		clickByXpathExplict(".//li[contains(@class,'active-result')][contains(text(),'"+Acc+"')]");
-				Thread.sleep(16000);
+			//	Thread.sleep(16000);
 		
+	Boolean a=VerifyElementpresentreturn(prop.getProperty("click.clear.nickname.xpath"));	
+			if(a){
+				clickByXpathExplict(prop.getProperty("click.clear.nickname.xpath"));
+				
+			}
+				
+				
 		clickByXpathExplict(prop.getProperty("button.edit.xpath"));
+		
+		
+		
 String Nickname=Data("Testsss");
 enterByXpathExplict(prop.getProperty("input.edit.xpath"), nickname);
 Thread.sleep(4000);
@@ -58,6 +68,9 @@ clickByXpathExplict(prop.getProperty("btn.nickname.update.xpath"));
 verifyTextByXpathExplicitwait(prop.getProperty("verify.nickname.update.xpath"),nickname);
 
 Thread.sleep(4000);
+
+clickByXpathExplict(prop.getProperty("click.clear.nickname.xpath"));
+
 
 clickByXpathExplict(prop.getProperty("button.edit.xpath"));
 
