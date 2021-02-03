@@ -35,6 +35,15 @@ public Alfairs_Page clickAlfairs() throws InterruptedException{
 	
 }
 
+public Alfairs_Page clickcashmanagement() throws InterruptedException{
+	//Thread.sleep(20000);
+	
+	clickByXpathExplict(prop.getProperty("click.cashmanagement.xpath"));
+	//locateFrame("icanvas");
+	return new Alfairs_Page(driver, test);
+	
+}
+
 public AdminDatelinePage clickAdmin(){
 	clickByXpathExplict(prop.getProperty("Click.Adminmodule.Menu.xpath"));
 	//locateFrame("icanvas");

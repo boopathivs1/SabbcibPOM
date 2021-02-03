@@ -38,6 +38,26 @@ return this;
 	
 	
 	
+	
+	public DetailPage	VerifyAccountStatement(String accno,String ServiceReq) throws InterruptedException
+	
+	{
+		locateFrame("icanvas");	
+		clickByXpathExplict(prop.getProperty("Click.Statement.Account.dropdown.xpath"));
+		Thread.sleep(3000);
+		clickByXpathExplict(".//li[contains(@class,'active-result')][contains(text(),'"+accno+"')]");	
+		Thread.sleep(3000);
+		clickByXpathExplict(prop.getProperty("Click.Statement.Account.ServiceReq.dropdown.xpath"));
+		Thread.sleep(3000);
+		
+		
+		clickByXpathExplict(".//li[contains(@class,'active-result')][contains(text(),'"+ServiceReq+"')]");
+		
+		VerifyElementPresent(prop.getProperty("verify.account.requestpage.xpath"),"Account Request page has been displaying" ,"Account Request Page has not been displaying");
+		return this;
+	}
+	
+	
 
 	public DetailPage addNickname(String Acc,String nickname) throws InterruptedException{
 		locateFrame("icanvas");	
