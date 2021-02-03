@@ -26,7 +26,7 @@ public Alfairs_Page fillAlfairs(String accno) throws InterruptedException{
 	clickByXpathExplict(prop.getProperty("submit.estat.xpath"));
 
 	
-	clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
+//	clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
 	
 	//clickByXpathExplict(prop.getProperty("submit.estat.checkbox.xpath"));
 	
