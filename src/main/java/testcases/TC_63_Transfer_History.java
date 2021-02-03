@@ -21,7 +21,7 @@ public class TC_63_Transfer_History  extends ProjectWrapp {
 		dataSheetName="SaabCIBDev";
 		category="Sanity";
 		authors="Boopathi";
-		testKeyword="TC63a";
+		testKeyword="TC63";
 		LogoutStatus=true;
 		usertype="CIBUser";
 
