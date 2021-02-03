@@ -20,24 +20,30 @@ public class Alfairs_Page extends ProjectWrapp{
 public Alfairs_Page fillAlfairs(String accno) throws InterruptedException{
 	//Thread.sleep(20000);
 
-	locateFrame("icanvas");
+	//locateFrame("icanvas");
 	
 	dropdownSelection(prop.getProperty("select.corpaddbill.xpath"),accno);
 	clickByXpathExplict(prop.getProperty("submit.estat.xpath"));
 
+<<<<<<< HEAD
 	
 //	clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
+=======
+	clickByXpathExplict(prop.getProperty("click.continue.xpath"));
+	//clickJsWaitLess(prop.getProperty("submit.estat.checkbox.xpath"));
+>>>>>>> branch 'master' of https://github.com/boopathivs1/SabbcibPOM.git
 	
 	//clickByXpathExplict(prop.getProperty("submit.estat.checkbox.xpath"));
 	
 	
-	clickByXpathExplict(prop.getProperty("submit.estat.ok.xpath"));
+	//clickByXpathExplict(prop.getProperty("submit.estat.ok.xpath"));
 //	clickJsWaitLess(prop.getProperty("submit.estat.ok.xpath"));
+	Thread.sleep(3000);
 windowhandlesindex(1);	
 
 	
 
-Boolean a=VerifyElementpresentreturn(prop.getProperty("verify.table.data.alfair.xpath"));
+Boolean a=VerifyElementpresentreturn(prop.getProperty("verify.task.xpath"));
 	
 	if(a){
 		reportStep("Biller Details has not been displaying","FAIL");

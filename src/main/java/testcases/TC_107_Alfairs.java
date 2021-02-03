@@ -40,7 +40,8 @@ public class TC_107_Alfairs  extends ProjectWrapp {
 		.clickSecureimage()
 		.clickLoginButtonFinal()
 		.submitTokenXpath(Otp)
-		.clickAlfairs()
+		//.clickAlfairs()
+		.clickcashmanagement()
 		.fillAlfairs(accno)
 		.logout(LogoutStatus,usertype);
 		
