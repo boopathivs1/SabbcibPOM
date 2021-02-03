@@ -31,7 +31,7 @@ public void setDatag() {
 @Test(groups={"sanity"},dataProvider="fetch")
 public void assignModifAccessRights(String casename,String GroupID ,String Username,String Password,String Otp,
 		String userid,String auth1,String auth2,String groupname,
-		String data1,String data11,String data12,String data13,String data14,String data15,
+		String checkboxstatus,String data11,String data12,String data13,String data14,String data15,
 		String data16,String data17,String data18,String data19,String data20,String data21) throws Exception{	
 	
 	try{
@@ -50,7 +50,7 @@ public void assignModifAccessRights(String casename,String GroupID ,String Usern
 	.createUsersFilter("UserId","Active",userid,"true")
 	.verifyeditUserIdpresent(userid,"(.//strong[contains(text(),'User ID')]/following::span[text()='"+userid+"']//following::button/span[text()='Assign Corporates'])[1]")
 .clickAssignAccessRights()
-.fillAccessRights()
+.fillAccessRights(checkboxstatus)
 .clickDatelinemenu()
 	.verifyAdminbuzz(auth1,auth2, "Users Corporate Access Right Updation Request")
 	//.logout(true);

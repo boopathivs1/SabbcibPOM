@@ -44,14 +44,17 @@ public SabbLoginPage enterPassword(String Password) throws InterruptedException{
 		} catch (InterruptedException e1) {
 		}
 
+//		Boolean a=driver.getPageSource().contains("OTP");
+//
+////		Boolean a=VerifyElementpresentreturn(prop.getProperty("Enter.token.xpath"));
+//
+//		if(!a){
+//			Boolean b=VerifyElementWARNreturn(prop.getProperty("previos.session.verify.xpath"));
+//			LogoutbooleanResult(b, "Your Previous Session is still active. Try after 5 minutes");	
+//		}
+//		
 		
-/*		Boolean a=driver.getPageSource().contains("OTP");
-		if(!a){
-			Boolean b=VerifyElementWARNreturn(prop.getProperty("previos.session.verify.xpath"));
-			LogoutbooleanResult(b, "Your Previous Session is still active. Try after 5 minutes");	
-		}
-	*/	
-		
+	//	Thread.sleep(3000);
 		
 		return new OtP_Page(driver,test);
 	}

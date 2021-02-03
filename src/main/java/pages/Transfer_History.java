@@ -72,6 +72,58 @@ Thread.sleep(3000);
 	}
 	
 	
+	public Transfer_History transferHistorycheck(String corpid,String fromacc,String Fromdate) throws InterruptedException{
+		locateFrame("icanvas");
+		
+		
+		dropdownSelection(prop.getProperty("corpid.transferhistory.xpath"),corpid);
+		Thread.sleep(1000);
+
+		dropdownSelection(prop.getProperty("fromacc.transferhistory.choosen.xpath"),fromacc);
+		
+		Thread.sleep(1000);	
+//		clickByXpathExplict(prop.getProperty("click.calendar.icon.xpath"));
+		Thread.sleep(3000);
+	//	clickByXpathExplict("(.//button[text()='Clear'])[1]");
+		Thread.sleep(3000);	
+		//clickByXpathExplict("(.//input[contains(@class,'ws-date')])[1]");
+		
+		enterByXpathExplict("(.//input[contains(@class,'ws-date')])[1]",Fromdate);
+		
+//		clickByXpathExplict(prop.getProperty("select.twentyyear.xpath"));
+		Thread.sleep(8000);
+
+//clickByXpathExplict(prop.getProperty("select.calendar.Janmonth.xpath"));
+
+Thread.sleep(3000);
+
+//clickByXpathExplict(prop.getProperty("select.requeststatus.jan.fromddate.xpath"));
+		
+		
+		
+	//	clickByXpathExplict(prop.getProperty("click.today.calendar.xpath"));
+		Thread.sleep(3000);
+		clickByXpathExplict(prop.getProperty("click.tocalendar.icon.xpath"));
+		Thread.sleep(3000);
+		clickByXpathExplict(prop.getProperty("click.todaytwo.calendar.anotherindex.xpath"));
+			
+		clickByXpathExplict(prop.getProperty("transfer.history.filter.xpath"));
+		Thread.sleep(6000);
+
+	VerifyElementPresent(prop.getProperty("transfer.history.table.data.xpath"),"Transfer history has displaying","Transfer history has not displaying");
+		
+
+		Thread.sleep(6000);
+
+		clickByXpathExplict(prop.getProperty("click.tranferrecord.xpath"));
+		Thread.sleep(3000);
+		VerifyElementPresent(prop.getProperty("verify.tranferdetailspage.xpath"),"Transfer details has displaying","Transfer details  has not displaying");
+		
+		return this;	
+	}
+	
+
+	
 	public Transfer_History transfer_History_verify(String corpid,String fromacc,String fromdate) throws InterruptedException{
 		locateFrame("icanvas");
 		
