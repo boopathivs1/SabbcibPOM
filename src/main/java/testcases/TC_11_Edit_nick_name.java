@@ -21,7 +21,7 @@ public class TC_11_Edit_nick_name  extends ProjectWrapp {
 		dataSheetName="SaabCIBDev";
 		category="Regression";
 		authors="Boopathi";
-		testKeyword="TC11";
+		testKeyword="TC11a";
 		LogoutStatus=true;
 		usertype="CIBUser";
 	}
